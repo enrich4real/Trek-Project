@@ -1,0 +1,2045 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="fix">
+    <div class="header">
+        <h1>TREK PARTNERS</h1>
+        <input type="search" placeholder="SEARCH HERE" id="search">
+        <div class="list">
+            <ul>
+                <li> <a href="">HOME </a></li>
+                <li> <a href="">ABOUT </a></li>
+                <li><a href=""> CONTACT </a></li>
+            </ul>
+        </div>
+        {% if user.is_authenticated %}
+            <span id="button">Welcome, {{ user.username }}</span>
+            <a id='button' href="{% url 'accounts:logout' %}">Logout</a>
+        {% else %}
+            <a id='button' href="{% url 'accounts:login' %}">Log in/Sign Up</a>
+        {% endif %}
+    </div> </div>
+    <div class="display">
+    <button class="c" onclick="plusDivs(-1)" id="btn1">&#10094;</button>
+    <img class="mySlides" src="{% static 'mountain.jpeg' %}">
+    <img class="mySlides" src="{% static 'garden.jpg' %}">
+    <img class="mySlides" src="{% static 'waterfall.jpeg' %}">
+    <img class="mySlides" src="{% static 'monument.jpg' %}">
+    <p class="slide" id="q">There's no glory in climbing a mountain if all you want to do is to get to the top. It's experiencing the climb itself—in all its moments of revelation, heartbreak, and fatigue—that has to be the goal.” – Karyn Kusama</p>
+    <p class="slide" id="w">If you look the right way, you can see that the whole world is a garden.” — Frances Hodgson Burnett, The Secret Garden</p>
+    <p class="slide" id="e"> Waterfalls wouldn’t sound so melodious if there were no rocks in their way.</p>
+    <p class="slide" id="r">What you leave behind is not what is engraved in stone monuments, but what is woven into the lives of others.</p>
+    <button class="c" onclick="plusDivs(+1)" id="btn2">&#10095;</button>
+    </div>
+    <hr id="pp">
+     <h1 id="np">WEEKEND PLANS</h1>
+     <div class="boom">
+      <hr>
+      <hr>
+      </div>
+      
+      <main>
+        <div class='card'>
+          <div class='info'>
+            <h1 class='title' id="pp">MANALI</h1>
+            <p class='description' id="op">A short description</p>
+          </div>
+        </div>
+        <div class='card2'>
+          <div class='info2'>
+            <h1 class='title' id="pp">RISHIKESH</h1>
+            <p class='description' id="op">A short description</p>
+          </div>
+        </div>
+        <div class='card3'>
+          <div class='info3'>
+            <h1 class='title' id="pp">MUSSOORIE</h1>
+            <p class='description' id="op">A short description</p>
+          </div>
+        </div>
+        <div class='card4'>
+          <div class='info4'>
+            <h1 class='title' id="pp">LADAKH</h1>
+            <p class='description' id="op">A short description</p>
+          </div>
+        </div>
+        <div class='card5'>
+          <div class='info5'>
+            <h1 class='title' id="pp">NAINITAL</h1>
+            <p class='description' id="op">A short description</p>
+          </div>
+        </div>
+      </main>
+     <hr id="pp">
+      <h1 id="np">PLACES WE CAN TAKE YOU TO</h1>
+       <div class="boom">
+      <hr>
+      <hr>
+      </div>
+      <div id="kl">
+      <div class="fl">
+      <div class="wrap animate pop">
+        <div class="overlay">
+          <div class="overlay-content animate slide-left delay-2">
+            <h1 class="animate slide-left pop delay-4" id="tree">DESERTS</h1>
+            <p class="animate slide-left pop delay-5" id="pip" style="color: white; margin-bottom: 2.5rem;">Kingdom of CAMELS <em></em></p>
+          </div>
+          <div class="image-content animate slide delay-5"></div>
+              <div class="dots animate">
+                <div class="dot animate slide-up delay-6"></div>
+                <div class="dot animate slide-up delay-7"></div>
+                <div class="dot animate slide-up delay-8"></div>
+              </div>
+        </div>
+          <div class="text">
+            <p><img class="inset" src="{% static 'desert.jpeg' %}" alt="" />Trees are woody perennial plants that are a member of the kingdom <em>Plantae</em>. All species of trees are grouped by their genus, family, and order. This helps make identifying and studying trees easier.</p>
+            <p>Apart from providing oxygen for the planet and beauty when they bloom or turn color, trees are very useful. Certain species of hardwood and softwood trees are excellent for timber, making furniture, and paper.</p>
+            <p>When managed properly, trees are a good source of renewable energy and construction material.</p>
+          </div>
+      </div>
+      <div class="wrap1 animate pop1">
+        <div class="overlay1">
+          <div class="overlay1-content animate slide-left delay-2">
+            <h1 class="animate slide-left pop delay-4" id="tree">WATERFALLS</h1>
+            <p class="animate slide-left pop delay-5" id="pip" style="color: white; margin-bottom: 2.5rem;">FLOWING WATER<em></em></p>
+          </div>
+          <div class="image1-content animate slide delay-5"></div>
+              <div class="dots animate">
+                <div class="dot animate slide-up delay-6"></div>
+                <div class="dot animate slide-up delay-7"></div>
+                <div class="dot animate slide-up delay-8"></div>
+              </div>
+        </div>
+          <div class="text1">
+            <p><img class="inset" src="{% static 'water.jpg' %}" alt="" />Trees are woody perennial plants that are a member of the kingdom <em>Plantae</em>. All species of trees are grouped by their genus, family, and order. This helps make identifying and studying trees easier.</p>
+            <p>Apart from providing oxygen for the planet and beauty when they bloom or turn color, trees are very useful. Certain species of hardwood and softwood trees are excellent for timber, making furniture, and paper.</p>
+            <p>When managed properly, trees are a good source of renewable energy and construction material.</p>
+          </div>
+      </div>
+      <div class="wrap2 animate pop2">
+        <div class="overlay2">
+          <div class="overlay2-content animate slide-left delay-2">
+            <h1 class="animate slide-left pop delay-4" id="tree">MOUNTAINS</h1>
+            <p class="animate slide-left pop delay-5" id="pip" style="color: white; margin-bottom: 2.5rem;">HIGH GLORY<em></em></p>
+          </div>
+          <div class="image2-content animate slide delay-5"></div>
+              <div class="dots animate">
+                <div class="dot animate slide-up delay-6"></div>
+                <div class="dot animate slide-up delay-7"></div>
+                <div class="dot animate slide-up delay-8"></div>
+              </div>
+        </div>
+          <div class="text2">
+            <p><img class="inset" src="{% static 'riverr.jpg' %}" alt="" />Trees are woody perennial plants that are a member of the kingdom <em>Plantae</em>. All species of trees are grouped by their genus, family, and order. This helps make identifying and studying trees easier.</p>
+            <p>Apart from providing oxygen for the planet and beauty when they bloom or turn color, trees are very useful. Certain species of hardwood and softwood trees are excellent for timber, making furniture, and paper.</p>
+            <p>When managed properly, trees are a good source of renewable energy and construction material.</p>
+          </div>
+      </div>
+
+      </div>
+      <div class="hl">
+      <div class="wrap3 animate pop2">
+        <div class="overlay3">
+          <div class="overlay3-content animate slide-left delay-2">
+            <h1 class="animate slide-left pop delay-4" id="tree">RIVERS</h1>
+            <p class="animate slide-left pop delay-5" id="pip" style="color: white; margin-bottom: 2.5rem;">RUNNING BEAUTY<em></em></p>
+          </div>
+          <div class="image3-content animate slide delay-5"></div>
+              <div class="dots animate">
+                <div class="dot animate slide-up delay-6"></div>
+                <div class="dot animate slide-up delay-7"></div>
+                <div class="dot animate slide-up delay-8"></div>
+              </div>
+        </div>
+          <div class="text3">
+            <p><img class="inset" src="{% static 'ro.avif' %}" alt="" />Trees are woody perennial plants that are a member of the kingdom <em>Plantae</em>. All species of trees are grouped by their genus, family, and order. This helps make identifying and studying trees easier.</p>
+            <p>Apart from providing oxygen for the planet and beauty when they bloom or turn color, trees are very useful. Certain species of hardwood and softwood trees are excellent for timber, making furniture, and paper.</p>
+            <p>When managed properly, trees are a good source of renewable energy and construction material.</p>
+          </div>
+      </div>
+       <div class="wrap4 animate pop2">
+        <div class="overlay4">
+          <div class="overlay4-content animate slide-left delay-2">
+            <h1 class="animate slide-left pop delay-4" id="tree">TEMPLES</h1>
+            <p class="animate slide-left pop delay-5" id="pip" style="color: white; margin-bottom: 2.5rem;">AESTHETIC LEARNINGS<em></em></p>
+          </div>
+          <div class="image4-content animate slide delay-5"></div>
+              <div class="dots animate">
+                <div class="dot animate slide-up delay-6"></div>
+                <div class="dot animate slide-up delay-7"></div>
+                <div class="dot animate slide-up delay-8"></div>
+              </div>
+        </div>
+          <div class="text4">
+            <p><img class="inset" src="{% static 't.jpg' %}" alt="" />Trees are woody perennial plants that are a member of the kingdom <em>Plantae</em>. All species of trees are grouped by their genus, family, and order. This helps make identifying and studying trees easier.</p>
+            <p>Apart from providing oxygen for the planet and beauty when they bloom or turn color, trees are very useful. Certain species of hardwood and softwood trees are excellent for timber, making furniture, and paper.</p>
+            <p>When managed properly, trees are a good source of renewable energy and construction material.</p>
+          </div>
+      </div>
+       <div class="wrap5 animate pop2">
+        <div class="overlay5">
+          <div class="overlay5-content animate slide-left delay-2">
+            <h1 class="animate slide-left pop delay-4" id="tree">FOREST</h1>
+            <p class="animate slide-left pop delay-5" id="pip" style="color: white; margin-bottom: 2.5rem;">DENSE ADVENTURES<em></em></p>
+          </div>
+          <div class="image5-content animate slide delay-5"></div>
+              <div class="dots animate">
+                <div class="dot animate slide-up delay-6"></div>
+                <div class="dot animate slide-up delay-7"></div>
+                <div class="dot animate slide-up delay-8"></div>
+              </div>
+        </div>
+          <div class="text5">
+            <p><img class="inset" src="{% static 'forest.jpg' %}" alt="" />Trees are woody perennial plants that are a member of the kingdom <em>Plantae</em>. All species of trees are grouped by their genus, family, and order. This helps make identifying and studying trees easier.</p>
+            <p>Apart from providing oxygen for the planet and beauty when they bloom or turn color, trees are very useful. Certain species of hardwood and softwood trees are excellent for timber, making furniture, and paper.</p>
+            <p>When managed properly, trees are a good source of renewable energy and construction material.</p>
+          </div>
+      </div>
+      </div>
+      </div>
+      <footer class="footer">
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+    </ul>
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+
+    </ul>
+    <p>&copy;2021 Nadine Coelho | All Rights Reserved</p>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+
+
+.footer {
+  width: 100%;
+  background: #3586ff;
+  min-height: 60px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+} 
+    .kl{
+      display: flex;
+      flex-direction: column;
+
+    }
+      #np{
+        text-align: center;
+        font-size: 1.3cm;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+      }
+      .boom{
+        width: 50vw;
+        margin-top: 0;
+        margin-bottom: 3%;
+        margin-left: 25vw;
+
+        
+      }
+      hr{
+        height: 5px;
+        background-color: black;
+      }
+      #pp{
+        width: fit-content;
+        height: 1px;
+
+      }
+      .fl{
+        display: flex;
+        
+      }
+      .hl{
+        display: flex;
+      }
+       #tree {
+	font-size: 3vw;
+	text-align: center;
+	color: white;
+}
+#pip {
+	font-size: max(10pt, 2.5vmin);
+	line-height: 1.4;
+	color: #0e390e;
+	margin-bottom: 1.5rem;
+}
+
+.wrap2 {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	width: 30vw;
+	height: 20vw;
+	margin: 2rem auto;
+	border: 8px solid;
+	border-image: linear-gradient(-50deg, rgb(0, 68, 255), #2100b3, rgb(5, 235, 252), rgb(5, 168, 154), rgb(157, 147, 252), #38eaf0, rgb(16, 164, 223)) 1;
+	transition: .3s ease-in-out;
+	position: relative;
+	overflow: hidden;
+}
+.overlay2 {
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	padding: 1rem .75rem;
+	background: #186218;
+	transition: .4s ease-in-out;
+	z-index: 1;
+}
+.overlay2-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 10vmin;
+	height: 100%;
+	padding: .5rem 0 0 .5rem;
+	border: 3px solid;
+	border-image: 
+    	linear-gradient(
+      	to bottom, 
+      	#AEA724 5%,
+      	forestgreen 35% 65%,
+      	#AEA724 95%
+    	) 0 0 0 100%;
+	transition: .3s ease-in-out .2s;
+	z-index: 1;
+}
+.image2-content {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50vmin;
+	height: 100%;
+	background-image: url("static/riverr.jpg");
+	background-size: cover;
+	transition: .3s ease-in-out;
+	/* border: 1px solid green; */
+}
+
+.inset {
+	max-width: 50%;
+	margin: 0.25em 1em 1em 0;
+	border-radius: 0.25em;
+	float: left;
+}
+
+.dots {
+	position: absolute;
+	bottom: 1rem;
+	right: 2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width: 55px;
+	height: 4vmin;
+	transition: .3s ease-in-out .3s;
+}
+.dot {
+	width: 14px;
+	height: 14px;
+	background: yellow;
+	border: 1px solid indigo;
+	border-radius: 50%;
+	transition: .3s ease-in-out .3s;
+}
+
+.text2 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 30vw;
+	height: 100%;
+	padding: 3vmin 4vmin;
+	background: #fff;
+	
+	overflow-y: scroll;
+}
+
+.wrap2:hover .overlay2
+ {
+	transform: translateX(-60vmin);
+}
+.wrap2:hover .image2-content {
+	width: 30vmin;
+}
+.wrap2:hover .overlay2-content {
+	border: none;
+	transition-delay: .2s;
+	transform: translateX(60vmin);
+  visibility: hidden;
+}
+.wrap2:hover .dots {
+	transform: translateX(1rem);
+}
+.wrap2:hover .dots .dot {
+	background: white;
+}
+.wrap2:hover #tree{
+  visibility: hidden;
+}
+
+
+/* Animations and timing delays */
+.animate {
+  animation-duration: 0.7s;
+  animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
+  animation-fill-mode: backwards;
+}
+/* Pop In */
+.pop { animation-name: pop; }
+@keyframes pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+/* Slide In */
+.slide { animation-name: slide; }
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translate(4em, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+/* Slide Left */
+.slide-left { animation-name: slide-left; }
+@keyframes slide-left {
+  0% {
+    opacity: 0;
+    transform: translate(-40px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.slide-up {animation-name: slide-up;}
+@keyframes slide-up {
+	0% {
+		opacity: 0;
+		transform: translateY(3em);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.delay-1 {
+  animation-delay: 0.3s;
+}
+.delay-2 {
+  animation-delay: 0.6s;
+}
+.delay-3 {
+  animation-delay: 0.9s;
+}
+.delay-4 {
+  animation-delay: 1.2s;
+}
+.delay-5 {
+  animation-delay: 1.5s;
+}
+.delay-6 {
+  animation-delay: 1.8s;
+}
+.delay-7 {
+  animation-delay: 2.1s;
+}
+.delay-8 {
+  animation-delay: 2.4s;
+}
+.wrap4 {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	width: 30vw;
+	height: 20vw;
+	margin: 2rem auto;
+	border: 8px solid;
+	border-image: linear-gradient(-50deg, rgb(0, 68, 255), #2100b3, rgb(5, 235, 252), rgb(5, 168, 154), rgb(157, 147, 252), #38eaf0, rgb(16, 164, 223)) 1;
+	transition: .3s ease-in-out;
+	position: relative;
+	overflow: hidden;
+}
+.overlay4 {
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	padding: 1rem .75rem;
+	background: #186218;
+	transition: .4s ease-in-out;
+	z-index: 1;
+}
+.overlay4-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 10vmin;
+	height: 100%;
+	padding: .5rem 0 0 .5rem;
+	border: 3px solid;
+	border-image: 
+    	linear-gradient(
+      	to bottom, 
+      	#AEA724 5%,
+      	forestgreen 35% 65%,
+      	#AEA724 95%
+    	) 0 0 0 100%;
+	transition: .3s ease-in-out .2s;
+	z-index: 1;
+}
+.image4-content {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50vmin;
+	height: 100%;
+	background-image: url("static/t.jpg");
+	background-size: cover;
+	transition: .3s ease-in-out;
+	/* border: 1px solid green; */
+}
+
+.inset {
+	max-width: 50%;
+	margin: 0.25em 1em 1em 0;
+	border-radius: 0.25em;
+	float: left;
+}
+
+.dots {
+	position: absolute;
+	bottom: 1rem;
+	right: 2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width: 55px;
+	height: 4vmin;
+	transition: .3s ease-in-out .3s;
+}
+.dot {
+	width: 14px;
+	height: 14px;
+	background: yellow;
+	border: 1px solid indigo;
+	border-radius: 50%;
+	transition: .3s ease-in-out .3s;
+}
+
+.text4 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 30vw;
+	height: 100%;
+	padding: 3vmin 4vmin;
+	background: #fff;
+	
+	overflow-y: scroll;
+}
+
+.wrap4:hover .overlay4
+ {
+	transform: translateX(-60vmin);
+}
+.wrap4:hover .image4-content {
+	width: 30vmin;
+}
+.wrap4:hover .overlay4-content {
+	border: none;
+	transition-delay: .2s;
+	transform: translateX(60vmin);
+  visibility: hidden;
+}
+.wrap4:hover .dots {
+	transform: translateX(1rem);
+}
+.wrap4:hover .dots .dot {
+	background: white;
+}
+.wrap2:hover #tree{
+  visibility: hidden;
+}
+
+
+/* Animations and timing delays */
+.animate {
+  animation-duration: 0.7s;
+  animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
+  animation-fill-mode: backwards;
+}
+/* Pop In */
+.pop { animation-name: pop; }
+@keyframes pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+/* Slide In */
+.slide { animation-name: slide; }
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translate(4em, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+/* Slide Left */
+.slide-left { animation-name: slide-left; }
+@keyframes slide-left {
+  0% {
+    opacity: 0;
+    transform: translate(-40px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.slide-up {animation-name: slide-up;}
+@keyframes slide-up {
+	0% {
+		opacity: 0;
+		transform: translateY(3em);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.delay-1 {
+  animation-delay: 0.3s;
+}
+.delay-2 {
+  animation-delay: 0.6s;
+}
+.delay-3 {
+  animation-delay: 0.9s;
+}
+.delay-4 {
+  animation-delay: 1.2s;
+}
+.delay-5 {
+  animation-delay: 1.5s;
+}
+.delay-6 {
+  animation-delay: 1.8s;
+}
+.delay-7 {
+  animation-delay: 2.1s;
+}
+.delay-8 {
+  animation-delay: 2.4s;
+}
+.wrap5 {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	width: 30vw;
+	height: 20vw;
+	margin: 2rem auto;
+	border: 8px solid;
+	border-image: linear-gradient(-50deg, rgb(0, 68, 255), #2100b3, rgb(5, 235, 252), rgb(5, 168, 154), rgb(157, 147, 252), #38eaf0, rgb(16, 164, 223)) 1;
+	transition: .3s ease-in-out;
+	position: relative;
+	overflow: hidden;
+}
+.overlay5 {
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	padding: 1rem .75rem;
+	background: #186218;
+	transition: .4s ease-in-out;
+	z-index: 1;
+}
+.overlay5-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 10vmin;
+	height: 100%;
+	padding: .5rem 0 0 .5rem;
+	border: 3px solid;
+	border-image: 
+    	linear-gradient(
+      	to bottom, 
+      	#AEA724 5%,
+      	forestgreen 35% 65%,
+      	#AEA724 95%
+    	) 0 0 0 100%;
+	transition: .3s ease-in-out .2s;
+	z-index: 1;
+}
+.image5-content {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50vmin;
+	height: 100%;
+	background-image: url("static/forest.jpg");
+	background-size: cover;
+	transition: .3s ease-in-out;
+	/* border: 1px solid green; */
+}
+
+.inset {
+	max-width: 50%;
+	margin: 0.25em 1em 1em 0;
+	border-radius: 0.25em;
+	float: left;
+}
+
+.dots {
+	position: absolute;
+	bottom: 1rem;
+	right: 2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width: 55px;
+	height: 4vmin;
+	transition: .3s ease-in-out .3s;
+}
+.dot {
+	width: 14px;
+	height: 14px;
+	background: yellow;
+	border: 1px solid indigo;
+	border-radius: 50%;
+	transition: .3s ease-in-out .3s;
+}
+
+.text5 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 30vw;
+	height: 100%;
+	padding: 3vmin 4vmin;
+	background: #fff;
+	
+	overflow-y: scroll;
+}
+
+.wrap5:hover .overlay5
+ {
+	transform: translateX(-60vmin);
+}
+.wrap5:hover .image5-content {
+	width: 30vmin;
+}
+.wrap5:hover .overlay5-content {
+	border: none;
+	transition-delay: .2s;
+	transform: translateX(60vmin);
+  visibility: hidden;
+}
+.wrap5:hover .dots {
+	transform: translateX(1rem);
+}
+.wrap5:hover .dots .dot {
+	background: white;
+}
+.wrap5:hover #tree{
+  visibility: hidden;
+}
+
+
+/* Animations and timing delays */
+.animate {
+  animation-duration: 0.7s;
+  animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
+  animation-fill-mode: backwards;
+}
+/* Pop In */
+.pop { animation-name: pop; }
+@keyframes pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+/* Slide In */
+.slide { animation-name: slide; }
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translate(4em, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+/* Slide Left */
+.slide-left { animation-name: slide-left; }
+@keyframes slide-left {
+  0% {
+    opacity: 0;
+    transform: translate(-40px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.slide-up {animation-name: slide-up;}
+@keyframes slide-up {
+	0% {
+		opacity: 0;
+		transform: translateY(3em);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.delay-1 {
+  animation-delay: 0.3s;
+}
+.delay-2 {
+  animation-delay: 0.6s;
+}
+.delay-3 {
+  animation-delay: 0.9s;
+}
+.delay-4 {
+  animation-delay: 1.2s;
+}
+.delay-5 {
+  animation-delay: 1.5s;
+}
+.delay-6 {
+  animation-delay: 1.8s;
+}
+.delay-7 {
+  animation-delay: 2.1s;
+}
+.delay-8 {
+  animation-delay: 2.4s;
+}
+       #tree {
+	font-size: 3vw;
+	text-align: center;
+	color: white;
+}
+#pip {
+	font-size: max(10pt, 2.5vmin);
+	line-height: 1.4;
+	color: #0e390e;
+	margin-bottom: 1.5rem;
+}
+
+.wrap3 {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	width: 30vw;
+	height: 20vw;
+	margin: 2rem auto;
+	border: 8px solid;
+	border-image: linear-gradient(-50deg, rgb(0, 68, 255), #2100b3, rgb(5, 235, 252), rgb(5, 168, 154), rgb(157, 147, 252), #38eaf0, rgb(16, 164, 223)) 1;
+	transition: .3s ease-in-out;
+	position: relative;
+	overflow: hidden;
+}
+.overlay3 {
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	padding: 1rem .75rem;
+	background: #186218;
+	transition: .4s ease-in-out;
+	z-index: 1;
+}
+.overlay3-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 10vmin;
+	height: 100%;
+	padding: .5rem 0 0 .5rem;
+	border: 3px solid;
+	border-image: 
+    	linear-gradient(
+      	to bottom, 
+      	#AEA724 5%,
+      	forestgreen 35% 65%,
+      	#AEA724 95%
+    	) 0 0 0 100%;
+	transition: .3s ease-in-out .2s;
+	z-index: 1;
+}
+.image3-content {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50vmin;
+	height: 100%;
+	background-image: url("static/ro.avif");
+	background-size: cover;
+	transition: .3s ease-in-out;
+	/* border: 1px solid green; */
+}
+
+.inset {
+	max-width: 50%;
+	margin: 0.25em 1em 1em 0;
+	border-radius: 0.25em;
+	float: left;
+}
+
+.dots {
+	position: absolute;
+	bottom: 1rem;
+	right: 2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width: 55px;
+	height: 4vmin;
+	transition: .3s ease-in-out .3s;
+}
+.dot {
+	width: 14px;
+	height: 14px;
+	background: yellow;
+	border: 1px solid indigo;
+	border-radius: 50%;
+	transition: .3s ease-in-out .3s;
+}
+
+.text3 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 30vw;
+	height: 100%;
+	padding: 3vmin 4vmin;
+	background: #fff;
+	
+	overflow-y: scroll;
+}
+
+.wrap3:hover .overlay3
+ {
+	transform: translateX(-60vmin);
+}
+.wrap3:hover .image3-content {
+	width: 30vmin;
+}
+.wrap3:hover .overlay3-content {
+	border: none;
+	transition-delay: .2s;
+	transform: translateX(60vmin);
+  visibility: hidden;
+}
+.wrap3:hover .dots {
+	transform: translateX(1rem);
+}
+.wrap3:hover .dots .dot {
+	background: white;
+}
+.wrap3:hover #tree{
+  visibility: hidden;
+}
+
+
+/* Animations and timing delays */
+.animate {
+  animation-duration: 0.7s;
+  animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
+  animation-fill-mode: backwards;
+}
+/* Pop In */
+.pop { animation-name: pop; }
+@keyframes pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+/* Slide In */
+.slide { animation-name: slide; }
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translate(4em, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+/* Slide Left */
+.slide-left { animation-name: slide-left; }
+@keyframes slide-left {
+  0% {
+    opacity: 0;
+    transform: translate(-40px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.slide-up {animation-name: slide-up;}
+@keyframes slide-up {
+	0% {
+		opacity: 0;
+		transform: translateY(3em);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.delay-1 {
+  animation-delay: 0.3s;
+}
+.delay-2 {
+  animation-delay: 0.6s;
+}
+.delay-3 {
+  animation-delay: 0.9s;
+}
+.delay-4 {
+  animation-delay: 1.2s;
+}
+.delay-5 {
+  animation-delay: 1.5s;
+}
+.delay-6 {
+  animation-delay: 1.8s;
+}
+.delay-7 {
+  animation-delay: 2.1s;
+}
+.delay-8 { animation-delay: 2.4s;
+}
+      #tree {
+	font-size: 3vw;
+	text-align: center;
+	color: white;
+}
+#pip {
+	font-size: max(10pt, 2.5vmin);
+	line-height: 1.4;
+	color: #0e390e;
+	margin-bottom: 1.5rem;
+}
+
+.wrap {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	width: 30vw;
+	height: 20vw;
+	margin: 2rem auto;
+	border: 8px solid;
+	border-image: linear-gradient(-50deg, yellow, #a7b300, rgb(252, 235, 5), rgb(166, 168, 5), rgb(245, 252, 147), #e6d700, rgb(126, 128, 0)) 1;
+	transition: .3s ease-in-out;
+	position: relative;
+	overflow: hidden;
+}
+.overlay {
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	padding: 1rem .75rem;
+	background: #186218;
+	transition: .4s ease-in-out;
+	z-index: 1;
+}
+.overlay-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 15vmin;
+	height: 100%;
+	padding: .5rem 0 0 .5rem;
+	border: 3px solid;
+	border-image: 
+    	linear-gradient(
+      	to bottom, 
+      	#AEA724 5%,
+      	forestgreen 35% 65%,
+      	#AEA724 95%
+    	) 0 0 0 100%;
+	transition: .3s ease-in-out .2s;
+	z-index: 1;
+}
+.image-content {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 60vmin;
+	height: 100%;
+	background-image: url("static/dessert.jpg");
+	background-size: cover;
+	transition: .3s ease-in-out;
+	/* border: 1px solid green; */
+}
+
+.inset {
+	max-width: 50%;
+	margin: 0.25em 1em 1em 0;
+	border-radius: 0.25em;
+	float: left;
+}
+
+.dots {
+	position: absolute;
+	bottom: 1rem;
+	right: 2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width: 55px;
+	height: 4vmin;
+	transition: .3s ease-in-out .3s;
+}
+.dot {
+	width: 14px;
+	height: 14px;
+	background: yellow;
+	border: 1px solid indigo;
+	border-radius: 50%;
+	transition: .3s ease-in-out .3s;
+}
+
+.text {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 30vw;
+	height: 100%;
+	padding: 3vmin 4vmin;
+	background: #fff;
+	
+	overflow-y: scroll;
+}
+
+.wrap:hover .overlay
+ {
+	transform: translateX(-60vmin);
+}
+.wrap:hover .image-content {
+	width: 30vmin;
+}
+.wrap:hover .overlay-content {
+	border: none;
+	transition-delay: .2s;
+	transform: translateX(60vmin);
+  visibility: hidden;
+}
+.wrap:hover .dots {
+	transform: translateX(1rem);
+}
+.wrap:hover .dots .dot {
+	background: white;
+}
+.wrap:hover #tree{
+  visibility: hidden;
+}
+
+
+/* Animations and timing delays */
+.animate {
+  animation-duration: 0.7s;
+  animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
+  animation-fill-mode: backwards;
+}
+/* Pop In */
+.pop { animation-name: pop; }
+@keyframes pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+/* Slide In */
+.slide { animation-name: slide; }
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translate(4em, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+/* Slide Left */
+.slide-left { animation-name: slide-left; }
+@keyframes slide-left {
+  0% {
+    opacity: 0;
+    transform: translate(-40px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.slide-up {animation-name: slide-up;}
+@keyframes slide-up {
+	0% {
+		opacity: 0;
+		transform: translateY(3em);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.delay-1 {
+  animation-delay: 0.3s;
+}
+.delay-2 {
+  animation-delay: 0.6s;
+}
+.delay-3 {
+  animation-delay: 0.9s;
+}
+.delay-4 {
+  animation-delay: 1.2s;
+}
+.delay-5 {
+  animation-delay: 1.5s;
+}
+.delay-6 {
+  animation-delay: 1.8s;
+}
+.delay-7 {
+  animation-delay: 2.1s;
+}
+.delay-8 {
+  animation-delay: 2.4s;
+}
+        main{
+          display: flex;
+
+        }
+        #tree {
+	font-size: 3vw;
+	text-align: center;
+	color: white;
+}
+#pip {
+	font-size: max(10pt, 2.5vmin);
+	line-height: 1.4;
+	color: #0e390e;
+	margin-bottom: 1.5rem;
+}
+
+.wrap1 {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	width: 30vw;
+	height: 20vw;
+	margin: 2rem auto;
+	border: 8px solid;
+	border-image: linear-gradient(-50deg, rgb(252, 252, 247), #c1f3ba, rgb(152, 252, 95), rgb(231, 231, 229), rgb(168, 247, 123), #fafaf9, rgb(129, 211, 200)) 1;
+	transition: .3s ease-in-out;
+	position: relative;
+	overflow: hidden;
+}
+.overlay1 {
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	padding: 1rem .75rem;
+	background: #186218;
+	transition: .4s ease-in-out;
+	z-index: 1;
+}
+.overlay1-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 15vmin;
+	height: 100%;
+	padding: .5rem 0 0 .5rem;
+	border: 3px solid;
+	border-image: 
+    	linear-gradient(
+      	to bottom, 
+      	#AEA724 5%,
+      	forestgreen 35% 65%,
+      	#AEA724 95%
+    	) 0 0 0 100%;
+	transition: .3s ease-in-out .2s;
+	z-index: 1;
+}
+.image1-content {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 60vmin;
+	height: 100%;
+	background-image: url("static/water.jpg");
+	background-size: cover;
+	transition: .3s ease-in-out;
+	/* border: 1px solid green; */
+}
+
+.inset{
+	max-width: 50%;
+	margin: 0.25em 1em 1em 0;
+	border-radius: 0.25em;
+	float: left;
+}
+
+.dots {
+	position: absolute;
+	bottom: 1rem;
+	right: 2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width: 55px;
+	height: 4vmin;
+	transition: .3s ease-in-out .3s;
+}
+.dot {
+	width: 14px;
+  height: 14px;
+	background: yellow;
+	border: 1px solid indigo;
+	border-radius: 50%;
+	transition: .3s ease-in-out .3s;
+}
+
+.text1 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 30vw;
+	height: 100%;
+	padding: 3vmin 4vmin;
+	background: #fff;
+	
+	overflow-y: scroll;
+}
+
+.wrap1:hover .overlay1
+ {
+	transform: translateX(-60vmin);
+}
+.wrap1:hover .image1-content {
+	width: 30vmin;
+}
+.wrap1:hover .overlay1-content {
+	border: none;
+	transition-delay: .2s;
+	transform: translateX(60vmin);
+  visibility: hidden;
+}
+.wrap1:hover .dots {
+	transform: translateX(1rem);
+}
+.wrap1:hover .dots .dot {
+	background: white;
+}
+.wrap1:hover #tree{
+  visibility: hidden;
+}
+
+
+/* Animations and timing delays */
+.animate {
+  animation-duration: 0.7s;
+  animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
+  animation-fill-mode: backwards;
+}
+/* Pop In */
+.pop { animation-name: pop; }
+@keyframes pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+/* Slide In */
+.slide { animation-name: slide; }
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translate(4em, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+/* Slide Left */
+.slide-left { animation-name: slide-left; }
+@keyframes slide-left {
+  0% {
+    opacity: 0;
+    transform: translate(-40px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.slide-up {animation-name: slide-up;}
+@keyframes slide-up {
+	0% {
+		opacity: 0;
+		transform: translateY(3em);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.delay-1 {
+  animation-delay: 0.3s;
+}
+.delay-2 {
+  animation-delay: 0.6s;
+}
+.delay-3 {
+  animation-delay: 0.9s;
+}
+.delay-4 {
+  animation-delay: 1.2s;
+}
+.delay-5 {
+  animation-delay: 1.5s;
+}
+.delay-6 {
+  animation-delay: 1.8s;
+}
+.delay-7 {
+  animation-delay: 2.1s;
+}
+.delay-8 {
+  animation-delay: 2.4s;
+}
+        @media(min-width:917px){
+        
+.card {
+  
+  margin:1vw;
+  
+  width: 25vw;
+  height: 30vw;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  background-image: url(static/manali.jpeg);
+  background-size: cover;
+}
+.card2 {
+  margin: 1vw;
+ 
+  width: 25vw;
+  height: 30vw;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  background-image: url(static/rishikesh.jpg);
+  background-size: cover;
+}
+.card3 {
+  margin: 1vw;
+
+  width: 25vw;
+  height: 30vw;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  background-image: url(static/mussoorie.jpg);
+  background-size: cover;
+}
+.card4 {
+  
+  margin: 1vw;
+  
+  width: 25vw;
+  height: 30vw;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  background-image: url(static/ladakh.jpg);
+  background-size: cover;
+}
+.card5 {
+  
+  margin: 1vw;
+  
+  width: 25vw;
+  height: 30vw;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  background-image: url(static/nainital.webp);
+  background-size: cover;
+}
+
+
+.info {
+  position: relative;
+  width: 100%;
+  height: 30vw;
+  background-color: #fff;
+  transform: translateY(100%)
+    translateY(-6vw)
+    translateZ(0);
+  transition: transform 0.5s ease-out;
+}
+
+.info:before {
+  z-index: -1;
+  display: block;
+  position: absolute;
+  content: ' ';
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url(static/manali.jpeg);
+  filter: blur(10px);
+  background-size: cover;
+  opacity: 0.25;
+  transform: translateY(-100%)
+    translateY(6vw)
+    translateZ(0);
+  transition: transform 0.5s ease-out;
+}
+
+.card:hover .info,
+.card:hover .info:before {
+  transform: translateY(0) translateZ(0);
+}
+.info2 {
+  position: relative;
+  width: 100%;
+  height: 30vw;
+  background-color: #fff;
+  transform: translateY(100%)
+    translateY(-6vw)
+    translateZ(0);
+  transition: transform 0.5s ease-out;
+}
+
+.info2:before {
+  z-index: -1;
+  display: block;
+  position: absolute;
+  content: ' ';
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url(static/rishikesh.jpg);
+  filter: blur(10px);
+  background-size: cover;
+  opacity: 0.25;
+  transform: translateY(-100%)
+    translateY(6vw)
+    translateZ(0);
+  transition: transform 0.5s ease-out;
+}
+
+.card2:hover .info2,
+.card2:hover .info2:before {
+  transform: translateY(0) translateZ(0);
+}
+.info3 {
+  position: relative;
+  width: 100%;
+  height: 30vw;
+  background-color: #fff;
+  transform: translateY(100%)
+    translateY(-6vw)
+    translateZ(0);
+  transition: transform 0.5s ease-out;
+}
+
+.info3:before {
+  z-index: -1;
+  display: block;
+  position: absolute;
+  content: ' ';
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url(static/mussoorie.jpg);
+  filter: blur(10px);
+  background-size: cover;
+  opacity: 0.25;
+  transform: translateY(-100%)
+    translateY(6vw)
+    translateZ(0);
+  transition: transform 0.5s ease-out;
+}
+
+.card3:hover .info3,
+.card3:hover .info3:before {
+  transform: translateY(0) translateZ(0);
+}
+.info4 {
+  position: relative;
+  width: 100%;
+  height: 30vw;
+  background-color: #fff;
+  transform: translateY(100%)
+    translateY(-6vw)
+    translateZ(0);
+  transition: transform 0.5s ease-out;
+}
+
+.info4:before {
+  z-index: -1;
+  display: block;
+  position: absolute;
+  content: ' ';
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url(static/ladakh.jpg);
+  filter: blur(10px);
+  background-size: cover;
+  opacity: 0.25;
+  transform: translateY(-100%)
+    translateY(6vw)
+    translateZ(0);
+  transition: transform 0.5s ease-out;
+}
+
+.card4:hover .info4,
+.card4:hover .info4:before {
+  transform: translateY(0) translateZ(0);
+}
+.info5{
+  position: relative;
+  width: 100%;
+  height: 30vw;
+  background-color: #fff;
+  transform: translateY(100%)
+    translateY(-6vw)
+    translateZ(0);
+  transition: transform 0.5s ease-out;
+}
+
+.info5:before {
+  z-index: -1;
+  display: block;
+  position: absolute;
+  content: ' ';
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url(static/manali.jpeg);
+  filter: blur(10px);
+  background-size: cover;
+  opacity: 0.25;
+  transform: translateY(-100%)
+    translateY(6vw)
+    translateZ(0);
+  transition: transform 0.5s ease-out;
+}
+
+.card5:hover .info5,
+.card5:hover .info5:before {
+  transform: translateY(0) translateZ(0);
+}
+
+.title {
+  margin: 0;
+  padding: 20px;
+  font-size: 3vw;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.description {
+  margin: 0;
+  padding: 0 18px px;
+  font-size: 2vw;
+  line-height: 1.0;
+}
+
+/* General layout and typography stuff */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
+
+* {
+  box-sizing: border-box;
+  position: relative;
+  transition: all .3s ease
+}
+#pp {
+  margin-bottom: 1em;
+  font-weight: inherit;
+  line-height: 1;
+  color: #1c5b72;
+  font-size: 2.7vw;
+}
+
+@media (min-width:800px) {
+  #pp {
+    font-size: 2.7vw;
+    font-weight: 500;
+  }
+}
+
+#op {
+  margin-bottom: 1.3em;
+  line-height: 1.618;
+ padding:8px;
+ overflow-y:scroll;
+ font-size: 2vw;
+}
+
+@media (min-width:800px) {
+  #op {
+    font-size: 1.3em;
+  }
+}
+
+a {
+  color: #e03616;
+  text-decoration: none
+}
+
+    
+
+      .slide{
+            position: absolute;
+            bottom: 17vw;
+            width: 75vw;
+            margin-left: 5vw ;
+            padding-left: 7vw;
+            font-size: 0.8cm;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-style:unset;
+            color: white;
+            }
+            h1{
+            position: relative;
+            bottom: 6px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #button{
+            width: 4cm;
+            float:right;
+            height: 1cm;
+            position: relative;
+            top: 19px;
+            background-color: rgb(0, 0, 0);
+            color: blanchedalmond;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        #search{
+            width: 6cm;
+            height: 1cm;
+            margin-left: 2vw;
+            border-radius: 5cm;
+            padding: 10px;
+            padding-right: 2px;
+            position: relative;
+            top: 18px;
+        }
+        .list{
+            display: flex;
+            justify-content: space-between;
+            
+            
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            overflow: auto;
+        }
+        li{
+            margin-left: 10px;
+            margin-right: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.6cm;
+            font-weight:700;
+            margin-top: 8px;
+        }
+        .display{
+            display: inline;
+        }
+        #btn1{
+            float :left ;
+            height: 4cm;
+            width: 1cm;
+            background: transparent;
+            border-color: transparent;
+            font-size: 2.5cm;
+            z-index: 2;
+            position: absolute;
+            top: 175px;
+            right: ;
+            color:;
+        }
+        #btn2{
+            z-index: 2;
+            color: ;
+            height: 4cm;
+            width: 1cm;
+            background: transparent;
+            border-color: transparent;
+            font-size: 2.5cm;
+            position: absolute;
+            bottom: 175px;
+            left:92vw;
+        }
+        .mySlides{
+            width:100vw;
+            height: 70vh;
+            overflow: hidden;
+            position:relative;
+            right: 8px;
+           
+            
+           
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }}
+        
+  
+    
+    </style>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+         showDivs(slideIndex += n);
+      }
+
+        function showDivs(n) {
+         var i;
+         var x = document.getElementsByClassName("mySlides");
+         var y=document.getElementsByClassName("slide");
+         if (n > x.length) {slideIndex = 1}
+         if (n < 1) {slideIndex = x.length} ;
+         for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+        y[i].style.display='none';
+         }
+         x[slideIndex-1].style.display = "block";
+         y[slideIndex-1].style.display = "block";
+
+       }
+       $(document).ready(function(){
+  var zindex = 10;
+  
+  $("div.card").click(function(e){
+    e.preventDefault();
+
+    var isShowing = false;
+
+    if ($(this).hasClass("show")) {
+      isShowing = true
+    }
+
+    if ($("div.cards").hasClass("showing")) {
+      // a card is already in view
+      $("div.card.show")
+        .removeClass("show");
+
+      if (isShowing) {
+        // this card was showing - reset the grid
+        $("div.cards")
+          .removeClass("showing");
+      } else {
+        // this card isn't showing - get in with it
+        $(this)
+          .css({zIndex: zindex})
+          .addClass("show");
+
+      }
+
+      zindex++;
+
+    } else {
+      // no cards in view
+      $("div.cards")
+        .addClass("showing");
+      $(this)
+        .css({zIndex:zindex})
+        .addClass("show");
+
+      zindex++;
+    }
+    
+  });
+});
+       
+    </script>
+</body>
+</html>
